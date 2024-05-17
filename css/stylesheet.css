@@ -60,10 +60,11 @@ p.topic {
 }
 
 .studytools {
-    height: 45rem;
+    height: max-content;
     text-align: center;
     background-color: rgb(228, 228, 228);
     padding-top: 2%;
+    padding-bottom: 2rem;
 }
 .getstarted {
     margin-top: 3rem;
@@ -77,32 +78,38 @@ p.topic {
     flex-direction: row-reverse;
     margin: 10%;
     height: 25%;
+    align-items: center;
 }
 .right {
     display: flex;
     flex-direction: row;
     margin: 10%;
     height: 25%;
+    align-items: center;
 }
 
 .right div:nth-child(2) {
     display: flex;
     flex-direction: column;
+    padding-left: 3rem;
+    text-align: center;
 }
 
 .left div:nth-child(2) {
     display: flex;
     flex-direction: column;
+    padding-right: 2rem;
+    text-align: center;
 }
 
-div.left img:first-child{
-    height: 25vh;
-    width: 50vw;
+div.left img{
+    height: 30vh;
+    width: 20vw;
 }
 
-div.right img:first-child{
-    height: 35%;
-    width: 10%;
+div.right img {
+    height: 33vh;
+    width: 20vw;
 }
 
 .flex-container {
@@ -113,7 +120,9 @@ div.right img:first-child{
     margin-inline: 10%;
 }
 @media (min-width: 481px) and (max-width: 1024px) {
-
+    .studytools {
+        height: max-content;
+    }
 }
 
 @media only screen and (max-width:  480px) {
